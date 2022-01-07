@@ -1,4 +1,4 @@
-Browsers loading webpages
+# Browsers loading webpages
 HTTP stands for HyperText Transfer Protocol.
 
 - It is, like the name suggests, a set of rules for querying the web.
@@ -15,7 +15,7 @@ Q. If the URL is only referring to an HTML file request, how does the Browser kn
 Ans:- The HTML file will have the resource dependencies listed down. Browser parses the HTML file and figures out the next set of requests it needs to make.
 
 For example, here’s a super simplified HTML snippet
-`
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +28,7 @@ For example, here’s a super simplified HTML snippet
     <script src="script.js"></script>
 </body>
 </html>
-`
+```
 This HTML page will tell the Browser to make 3 additional HTTP requests for
 - style.css
 - img.jpg
