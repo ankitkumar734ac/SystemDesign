@@ -12,7 +12,27 @@ Browsers use HTTP requests to fetch us web pages.
 
 Q. If the URL is only referring to an HTML file request, how does the Browser know what all other resources (CSS, JS) the web page needs?
 
-Ans:- 
+Ans:- The HTML file will have the resource dependencies listed down. Browser parses the HTML file and figures out the next set of requests it needs to make.
+
+For example, here’s a super simplified HTML snippet
+`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Learning By Doing!</title>
+</head>
+<body>
+    <h1>Learn By Doing</h1>
+    <img src="img.jpg">
+    <script src="script.js"></script>
+</body>
+</html>
+`
+This HTML page will tell the Browser to make 3 additional HTTP requests for
+- style.css
+- img.jpg
+- script.js
 
 
 ----------------------------------------------------------------
